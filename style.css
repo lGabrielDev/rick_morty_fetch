@@ -1,0 +1,19 @@
+body{
+     margin: 0;
+     padding: 0;
+     background-color: #323639;
+     color: lightgray;
+     height: 100vh;
+     width: 100vw;
+}
+
+button{
+     font-size: 12px;
+     height: 21px;
+}
+
+.pErro{
+     font: 20px;
+     color: rgb(127, 39, 39);
+     display: flex;
+}
