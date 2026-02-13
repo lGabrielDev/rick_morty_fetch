@@ -7,37 +7,58 @@
      <title>Document</title>
 </head>
 <body>
-     <h2>Busque seu personagem:</h2>
+     <!-- content -->
+     <div id="divContainer" class="divContainer">
+          <h2>Character</h2>
 
-     <!-- buscar personagem -->
-     <input id="input" type="number" placeholder="id">
-     <button id="button" >Buscar</button>
-     <hr>
-     <!-- name -->
-     <label for="name">Name</label>
-     <input type="checkbox" id="name" name="name">
-     
-      <!-- species -->
-     <label for="species">Species</label>
-     <input type="checkbox" id="species" name="species">
- 
-       <!-- location -->
-     <label for="location">Location</label>
-     <input type="checkbox" id="location" name="location">
-  
-     <!-- image -->
-     <label for="image">Image</label>
-     <input type="checkbox" id="image" name="image">
-     
-     <br>
+          <!-- input and search button  -->
+          <div class="divInputAndButton">
+               <input class="nomePersonagemInput" type="text" placeholder="Digite o nome do personagem">
+               <button class="searchButton" type="button">Search</button>
+          </div>
 
-     <div id="content">
-          <!-- mensagem de erro  -->
+          <!-- cads -->
+          <div class="divCards">
+               <!-- card 1 -->
+               <div class="card" >
+                    <p class="aliveCard">alive</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                    <p class="nomePersonagemCard">Rick Insano</p>
+               </div>
+
+               <!-- card 1 -->
+               <div class="card" >
+                    <p class="aliveCard">alive</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                    <p class="nomePersonagemCard">Rick Insano</p>
+               </div>
+
+               <!-- card 1 -->
+               <div class="card" >
+                    <p class="aliveCard">alive</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                    <p class="nomePersonagemCard">Rick Insano</p>
+               </div>
+
+               <!-- card 1 -->
+               <div class="card" >
+                    <p class="aliveCard">alive</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                    <p class="nomePersonagemCard">Rick Insano</p>
+               </div>
+
+               <!-- card 1 -->
+               <div class="card" >
+                    <p class="aliveCard">alive</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                    <p class="nomePersonagemCard">Rick Insano</p>
+               </div>
+          </div>
+
+
      </div>
 
 
-
-
-     <script type="module" src="testando.js"></script>
+     <script src="./script.js"></script>
 </body>
 </html>
