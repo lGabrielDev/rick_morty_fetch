@@ -4,6 +4,8 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/a1863d7eac.js" crossorigin="anonymous"></script>
      <title>Document</title>
 </head>
 <body>
@@ -18,18 +20,36 @@
           </div>
 
           <!-- cads -->
-          <div class="divCards">
+          <div id="divCards" class="divCards">
                <!-- card 1 -->
-               <div class="card">
-                    <p  class="aliveCard">dead</p>
-                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+               <!-- <div class="card">
+                    <p  class="deadAliveUnknownStatus unknown">dead</p>
+                    <img src="https://rickandmortyapi.com/api/character/avatar/11.jpeg" alt="">
                     <p class="nomePersonagemCard">Rick Insano</p>
+               </div> -->
+          </div>
+
+          <div class="backNextButtons">
+               <!-- back -->
+               <div class="backNextDiv backDiv">
+                    <i class="fa-solid fa-chevron-left arrowImage"></i>
+                    <p>back</p>
                </div>
 
+               <!-- current page -->
+                <p>1</p>
+
+               <!-- next -->
+               <div class="backNextDiv nextDiv">
+                    <i class="fa-solid fa-angle-right arrowImage"></i>
+                    <p>next</p>
+               </div>
           </div>
+
+          <!-- next page button -->
      </div>
 
 
-     <script src="./script.js"></script>
+     <script type="module" src="./script.js"></script>
 </body>
 </html>
