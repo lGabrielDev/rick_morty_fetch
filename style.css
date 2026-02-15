@@ -143,8 +143,12 @@ h2{
 }
 
 .deadCard{
-     background-color: #780606;
-     border: 2px solid #780606;
+     /* background-color: #780606;
+     border: 2px solid #780606; */
+
+     background-color: #A85440;
+     border: 2px solid #A85440;
+
 }
 
 .aliveCard{

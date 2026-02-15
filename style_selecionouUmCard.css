@@ -1,8 +1,116 @@
+
+.divContainerIndividualPage{
+     text-align: flex-start;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+
+     flex-direction: column;
+     width: 320px;
+     margin-top: 18px;
+     
+     display: none;
+}
+
 /* ================== back button  ==================*/
+
 .backDivUniqueCharacter{
      width: fit-content;
+     align-self: flex-start;
+     margin-bottom: 24px;
 }
 
 .backDivUniqueCharacter:hover{
      cursor: pointer;
+}
+
+
+
+
+/* ================== name e status  ==================*/
+.nameStatusIndividual{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 24px;
+     text-align: center;
+     width: 100%;
+}
+
+
+/* name */
+.individualName{
+     font-size: 28px;
+}
+
+.individualStatus{
+     width: 67%;
+     border-radius: 15px;
+}
+
+.individualStatusDead{
+     background-color: #A85440;
+}
+
+.individualStatusAlive{
+     background-color: #198754;
+}
+
+.individualStatusUnknown{
+     background-color: #464646;
+}
+
+/* ================== informacoes container  ==================*/
+.informacoesIndividualContainer{
+     box-sizing: border-box;
+     margin-top: 15px;
+     background-color: #302F2F;
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     padding-bottom: 17px;
+}
+
+.informacoes{
+     height: fit-content;
+     box-sizing: border-box;
+     margin-top: 15px;
+     background-color: #464646;
+     width: 92%;
+     border-radius: 6px;
+     padding: 10px 18px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.infoP{
+     margin-left: 15px;
+     margin-bottom: 13px;
+     display: flex;
+}
+
+
+.individualSpanTitle{
+     margin-right: 5px;     
+}
+
+/* informacoes principais */
+.individualSpanValue{
+     color: #15DF72;
+}
+
+
+
+
+/* lista episodios */
+.informacoesEpisodios{
+     padding-bottom: 9px;
+}
+
+.infoP_episodios{
+     display: flex;
+     flex-direction: column;
 }

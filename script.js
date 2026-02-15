@@ -62,7 +62,7 @@ export function criarCard(personagem){
      divCardsElement.appendChild(cardElement);
 
 
-     cardElement.addEventListener("click", () => {nextPageButton.mostrarApenasOCardSelecionado(cardElement)});
+     cardElement.addEventListener("click", () => {nextPageButton.mostrarApenasOCardSelecionado(personagem)});
 
 }
 
@@ -77,7 +77,7 @@ export async function criarCards(personagens){
 
 
 // ========== apagar os cards ==========
-function apagarCards(){
+export function apagarCards(){
      divCardsElement.innerHTML = "";
 }
 
@@ -125,7 +125,7 @@ backButton.addEventListener("click", async (event) => {
                    habilitarBotoesBackNext();
 
                },
-               0
+               1000
           ) ;
     } 
     catch (e) {
@@ -187,7 +187,7 @@ nextButton.addEventListener("click", async (event) => {
                    habilitarBotoesBackNext();
 
                },
-               0
+               1000
           ) ;
     } 
     catch (e) {
