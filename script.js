@@ -1,9 +1,9 @@
-import * as nextPageButton from './nextPageButton.js';
+import * as nextPageButton from './selecionouUmCard.js';
 
 //informacoes da API do Rick and Morty
 const QUANTIDADE_PERSONSANGES = 826;
 const QUANTIDADE_PAGINAS = 42;
-let paginaAtual = 1;
+export let paginaAtual = 1;
 let listaPersonsagens = [];
 let carregandoDadosApi = false;
 
@@ -16,7 +16,7 @@ let mensagemErroMuitosRequestsElement = document.querySelector("#mensagemErroMui
 
 
 //pegar personagens
-async function pegarPersonagensPorPagina(pagina){
+export async function pegarPersonagensPorPagina(pagina){
 
      let response = await fetch(`https://rickandmortyapi.com/api/character?page=${pagina}`);        
      let objetoDoBody = await response.json();
@@ -26,7 +26,7 @@ async function pegarPersonagensPorPagina(pagina){
 
 }
 
-function criarCard(personagem){
+export function criarCard(personagem){
      let cardElement = document.createElement("div");
      cardElement.classList.add("card");
 
@@ -60,11 +60,15 @@ function criarCard(personagem){
      cardElement.appendChild(pNomePersonsagemElement);
 
      divCardsElement.appendChild(cardElement);
+
+
+     cardElement.addEventListener("click", () => {nextPageButton.mostrarApenasOCardSelecionado(cardElement)});
+
 }
 
 
 
-async function criarCards(personagens){
+export async function criarCards(personagens){
      /// ===================================================================================
      personagens.forEach((perso) => {
           criarCard(perso);
@@ -80,7 +84,7 @@ function apagarCards(){
 // ====================  back and next buttons ====================
 
 backButton.addEventListener("click", async (event) => {
-      event.preventDefault();
+     event.preventDefault();
 
     //desabilitamos o back and next button
     //evitando que o usuario faça VÁRIOS requests

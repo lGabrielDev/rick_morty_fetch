@@ -29,6 +29,7 @@ body{
 h2{
      color: white;
      margin-bottom: 44px;
+     align-self: center;
 }
 
 /* ================ input e button =============  */
